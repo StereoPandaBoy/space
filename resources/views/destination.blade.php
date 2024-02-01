@@ -19,7 +19,13 @@
     @endsection
     @yield('destinationTitre')
 <!---------------------------------------------------------------------------------------------------------------------------------------------->
-@section('destinationNav')
+    @section('destinationImage')
+    <div class="image-planete">
+    </div>
+    @endsection
+    @yield('destinationImage')
+<!---------------------------------------------------------------------------------------------------------------------------------------------->
+    @section('destinationNav')
     <nav>
         <ul>
             <li><a href="#" class="lien-planete" data-planete="moon">Lune</a></li>
@@ -35,14 +41,8 @@
   
     @endsection
     @yield('destinationBlocDescription')
-<!---------------------------------------------------------------------------------------------------------------------------------------------->
-
     
-    @section('destinationImage')
-    <div class="image-planete">
-    </div>
-    @endsection
-    @yield('destinationImage')
+    
     <!-------------------------------------------------------------------------------------------------------------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
