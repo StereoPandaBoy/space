@@ -10,22 +10,56 @@
 
   <style>
 
-    .nav {
-      background-color: rgb(208, 214, 249, 1);
-      display: block;
-      width: 1000px;
-      height: 50px;
-      float: left;
-      letter-spacing: 2.7;
-      font-size: 16px;
-      color: #FFFFFF;
+  .container-header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+
+/************************************************************************************************************************************/
+ 
+  .logo {
+      background-image: url("{{ asset('images/Logo.png') }}");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 48px;
+      height: 48px;
+      margin-left: 50px;
+    
+      /* margin-top: 50px;
+      margin-left: 50px;
+      float: left; */
+
+
+
     }
 
+  /************************************************************************************************************************************/
+
+    .trait {
+      width: 473PX;
+      height: 0.5px;
+      background-color: #FFFFFF;
+    }
+
+  /************************************************************************************************************************************/
+    .nav {
+      background-color: rgba(208, 214, 249, 0.2);
+      display: block;
+      width: 830px;
+      height: 96px;
+      backdrop-filter: blur(5px);
+  
+    }
+   
+*
     .nav ul {
-      float: right;
+      display: flex;
+      justify-content: center;
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      text-align: center;
       text-transform: uppercase;
       font-family: 'Barlow Condensed', sans-serif;
     }
@@ -33,6 +67,15 @@
     .nav ul a {
       color: inherit;
       text-decoration: none;
+      letter-spacing: 2.7;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+
+    .nav ul a:hover {
+      
+      border-bottom: 2px solid #FFFFFF;
+
     }
 
     .nav ul li {
@@ -45,8 +88,21 @@
 
 </head>
 
-<!------------------------------------------------------------------------------------------------------------------------------------>
+
 <body>
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+ 
+<div class="container-header">
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+
+  <div class="logo"></div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+  
+  <div class="trait"></div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------>     
 
   <div class="nav">
     <ul>
@@ -76,4 +132,10 @@
       </li>
     </ul>
   </div>
+
   <!------------------------------------------------------------------------------------------------------------------------------------>
+
+  </div>
+    </div>
+  
+    <!------------------------------------------------------------------------------------------------------------------------------------>
