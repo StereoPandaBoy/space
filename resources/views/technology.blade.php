@@ -8,4 +8,16 @@
     </div>
 </div>
 
-@include('footer')
+<!------------------------------------------------------------------------------------------------------------------------------------>
+
+<style>
+
+body {
+    background-image: url("/images/backgrounds/technology.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+</style>
